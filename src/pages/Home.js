@@ -18,6 +18,9 @@ class Home extends Component {
     return (
       <Container className="mt-5">
         <Row>
+          <Col md={12}>
+            <h1>Rick and Morty Site</h1>
+          </Col>
           {characterData.map(item=> (
             <Col md={4} className="text-center">
               <Link to={`/detail/${item.id}`}>
